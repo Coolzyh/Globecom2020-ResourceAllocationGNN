@@ -787,7 +787,8 @@ class Agent:
         # tracking the simulation
         Train_Episode_Interval = 200
         Train_Step_Interval = 10
-        Save_Model_Interval = num_episodes
+        # please set Save_Model_Interval and Evaluation_Episode_Interval to 5 if you want to run RL_Evaluated_main_Epsilon_DiffTrails.py
+        Save_Model_Interval = 5 # if you only want to save the final model, you can set Save_Model_Interval = num_episodes
 
         # save results in their corresponding simulation parameter settings
         curr_sim_set = 'Train-Result' + '-RealFB-' + str(self.num_Feedback) + '-Batch-' + str(BATCH_SIZE) \
